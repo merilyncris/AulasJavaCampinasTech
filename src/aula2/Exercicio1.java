@@ -1,7 +1,7 @@
 package aula2;
 
 	// Exercício 1
-	class Main {  
+	class Exercicio1 {  
 	  public static void main(String args[]) { 
 	    int y = 99;
 	    int z = 11;
