@@ -2,26 +2,36 @@ package aula3;
 
 import java.util.Scanner;
 
+/*Escreva um algoritmo em Java que leia dois números inteiros e determine qual é o menor. Escreva um algoritmo que determina o maior também.*/
+
 public class Exercicio3 {
 
-	//Escreva um algoritmo para ler as dimensões de um retângulo e calcular sua area
-	
 	public static void main(String[] args) {
-		
-		Scanner scanner =new Scanner(System.in);
-		
-		System.out.println("Vamos calcular a área de um retângulo.\n");
-		
-		System.out.println("Por favor digite a base do retângulo:");
-		float base = scanner.nextFloat();
-		
-		System.out.println("Por favor digite a altura do retângulo:");
-		float altura = scanner.nextFloat();
-		
-		float area = base * altura;
-		
-		System.out.println("A área do retângulo é: " + area);
-		
-		scanner.close();
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite dois números inteiros:");
+		int numero = scan.nextInt();
+		int numeroSegundo = scan.nextInt();
+
+		int maior = 0;
+		int menor = 0;
+		boolean igual = numero == numeroSegundo;
+
+		if (igual) {
+			System.out.println("Os números são iguais");
 		}
+		if (!igual) {
+			if (numero < numeroSegundo) {
+				maior = numeroSegundo;
+				menor = numero;
+			} else {
+				maior = numero;
+				menor = numeroSegundo;
+			}
+			System.out.println("O maior número é " + maior + " e o menor número é " + menor);
+
+		}
+
+		scan.close();
+	}
 }
