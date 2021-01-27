@@ -41,24 +41,19 @@ public class OrdenandoArray {
 			}
 		}
 		
-		for (int i = 0; i < numerosSeparados.size(); i++)  
-            System.out.print(numerosSeparados.get(i) + ";"); 
-    } 
-	
-		/*
-		 * Outra opção de retorno
-		 * 
-		 * for(int numb : numerosSeparados) {
-			System.out.println(numb);
-		}	
-	
-		StringBuffer sb = new StringBuffer();
+		ArrayList<String> numb = new ArrayList<>();
+		
+		for(int num : numerosSeparados) {
+			String numeroString = String.valueOf(num);
+			numb.add(numeroString);
+		}
+		
+		String result = String.join(";", numb);
+
+        System.out.println(result);	
     
-    	for (int s : numerosSeparados) {
-    		sb.append(s);
-    		sb.append(";");
-    	}
-    	
-    	System.out.println(sb);*/
+        scan.close();
+	} 
+	
 }
 
