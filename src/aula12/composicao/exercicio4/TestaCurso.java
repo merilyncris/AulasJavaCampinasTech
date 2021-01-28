@@ -1,6 +1,5 @@
 package aula12.composicao.exercicio4;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TestaCurso {
@@ -48,6 +47,6 @@ public class TestaCurso {
 		curso.getAlunos();
 		System.out.println("media dos alunos " + curso.calculaMediaAlunos());
 
-		
+		scan.close();
 	}
 }
