@@ -5,8 +5,8 @@ public class Peixe extends Animal{
 
 	private String caracteristica;
 	
-	public Peixe(String nome, float comprimento, int numeroPasta, String cor, String ambiente, float velocidadeMedia) {
-		super(nome, comprimento, numeroPasta, cor, ambiente, velocidadeMedia);
+	public Peixe(String nome, float comprimento, int numeroPatas, String cor, String ambiente, float velocidadeMedia) {
+		super(nome, comprimento, numeroPatas, cor, ambiente, velocidadeMedia);
 		
 	}
 

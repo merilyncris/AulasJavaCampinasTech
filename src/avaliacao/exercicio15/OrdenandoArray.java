@@ -6,7 +6,6 @@ import java.util.Scanner;
 /*
  * Escreva um programa que dada uma entrada de números separados por ";", por exemplo: (72;56;4;108;12;57), 
  * escreva para o usuário os número de forma ordenada.
-
 String entrada = "72;56;4;108;12;57"; 
 // Lembre-se que essa string será dada pelo o usuário. Utilize o Scanner;
 // Converter essa string para um array de inteiros;
