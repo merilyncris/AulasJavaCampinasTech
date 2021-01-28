@@ -16,6 +16,4 @@ public class Vendedor extends Funcionario{
 		return super.getSalarioBase() + this.comissao;
 	}
 	
-	
-
 }

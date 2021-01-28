@@ -11,7 +11,5 @@ public class Assistente extends Funcionario{
 	public double calculaSalario() {
 		
 		return super.getSalarioBase();
-	}
-
-	
+	}	
 }

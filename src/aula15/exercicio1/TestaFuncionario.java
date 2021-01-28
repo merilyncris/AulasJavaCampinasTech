@@ -14,5 +14,4 @@ public class TestaFuncionario {
 		System.out.println(vendedor.calculaSalario());
 	}
 	
-	
 }
