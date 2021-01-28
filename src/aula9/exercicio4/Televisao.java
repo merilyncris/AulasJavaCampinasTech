@@ -17,12 +17,9 @@ public class Televisao{
 	
 	}
 
-
 	public int getVolume() {
 		return volume;
 	}
-
-
 
 	public int getCanal() {
 		return canal;
@@ -44,7 +41,7 @@ public class Televisao{
 	}
 	
 	public int diminuirCanal() {
-		return this.canal = this.canal+ 1;
+		return this.canal = this.canal - 1;
 	}
 	
 	public int mudarCanal(int canal) {
