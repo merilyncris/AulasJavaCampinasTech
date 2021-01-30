@@ -64,18 +64,9 @@ public class Pais {
 		
 		ArrayList<Pais> paisesComuns = new ArrayList<>();
 		
-		Pais paisMaisFronteiras = pais;
-		Pais paisMenosFronteiras = pais;
-		
-		if(pais.fronteiras.size() < this.fronteiras.size()) {
-			paisMaisFronteiras = this;
-		} else if (pais.fronteiras.size() > this.fronteiras.size()) {
-			paisMenosFronteiras = this;
-		}
-		
-		for(int i = 0; i < paisMaisFronteiras.fronteiras.size(); i++) {
-			for(Pais cadaPais : paisMenosFronteiras.fronteiras) {
-				if(cadaPais == paisMaisFronteiras.fronteiras.get(i)) {
+		for(int i = 0; i < this.fronteiras.size(); i++) {
+			for(Pais cadaPais : pais.fronteiras) {
+				if(cadaPais == this.fronteiras.get(i)) {
 					paisesComuns.add(cadaPais);				}
 			}
 		}

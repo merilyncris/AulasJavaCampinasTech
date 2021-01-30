@@ -43,14 +43,11 @@ public class TestaPais {
 		chile.setFronteiras(bolivia);
 		chile.setFronteiras(argentina);
 
-
-		
-
 		
 		brasil.getFronteiras();
 		
 		System.out.println(chile.verificaLimitrofe(uruguai));
 		
-		argentina.verificaFronteirasComuns(brasil);
+		chile.verificaFronteirasComuns(brasil);
 	}
 }
