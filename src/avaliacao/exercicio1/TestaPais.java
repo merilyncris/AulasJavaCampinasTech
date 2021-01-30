@@ -49,5 +49,6 @@ public class TestaPais {
 		System.out.println(chile.verificaLimitrofe(uruguai));
 		
 		chile.verificaFronteirasComuns(brasil);
+		argentina.verificaFronteirasComuns(brasil);
 	}
 }
